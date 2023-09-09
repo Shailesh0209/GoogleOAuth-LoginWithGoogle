@@ -27,8 +27,8 @@ mysql = pymysql.connect(
 oauth = OAuth(app)
 
 # Configure Google OAuth
-GOOGLE_CLIENT_ID = '587925029120-6jkjgupa5bi0vfrt7r5pbomkd4k638qh.apps.googleusercontent.com'
-GOOGLE_CLIENT_SECRET = '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'
+GOOGLE_CLIENT_ID = 'Your client id'
+GOOGLE_CLIENT_SECRET = 'you client secret'
 CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
 
 oauth.register(
