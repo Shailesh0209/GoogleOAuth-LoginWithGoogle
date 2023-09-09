@@ -1,4 +1,4 @@
-# GoogleOAuth-LoginWithGoogle
+# GoogleOAuth-LoginWithGoogle: Python(Flask)
 
 1. vvip: google uri should exactly match with where our flask app is running: http://127.0.0.1:5000/auth
 
