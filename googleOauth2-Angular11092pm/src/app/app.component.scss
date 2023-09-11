@@ -1,0 +1,39 @@
+.text-center {
+    text-align: center;
+}
+
+.text-center asl-google-signin-button {
+    margin: 20px;
+    
+    padding: 100px;
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    cursor: pointer;
+    width: 600vh;
+    height: 100%;
+}
+
+.text-center asl-google-signin-button:hover {
+    background-color: #357ae8;
+}
+
+.text-center asl-google-signin-button:focus {
+    outline: none;
+}
+
+.result {
+    margin: 20px;
+    // margin-left: 564px;
+    padding: 10px;
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+// class="mt-4 ml-30" style="margin-left: 564px;"

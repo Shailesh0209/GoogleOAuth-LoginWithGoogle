@@ -1,0 +1,78 @@
+<div class="container">
+  <h2 class="text-center mb-4">Angular Login with Google/Facebook</h2>
+
+
+
+
+  <!-- <div *ngIf="isLoggedin === false" class="text-center">
+    
+    <asl-google-signin-button [theme]="'filled_blue'"></asl-google-signin-button>
+  </div> -->
+  <!-- <div *ngIf="!isLoggedin">
+    <button type="button" (click)="loginWithGoogle()" class="btn btn-primary btn-block">Signin with Google</button>
+  </div> -->
+
+  <div *ngIf="!isLoggedin">
+    <asl-google-signin-button [theme]="'filled_blue'" (signIn)="loginWithGoogle()" class="google"></asl-google-signin-button>
+  </div>
+
+  <div *ngIf="isLoggedin === true" class="result" >
+    <div class="form-group" >
+      <label>First Name:</label>
+      <input type="text" class="form-control" [value]="socialUser?.firstName" id="firstname" readonly>
+    </div>
+    <div class="form-group" >
+      <label>Last Name:</label>
+      <input type="text" class="form-control" [value]="socialUser?.lastName" id="lastname" readonly>
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="text" class="form-control" [value]="socialUser?.email" id="email" readonly>
+    </div>
+    <!-- <div class="form-group">
+      <label>Mobile:</label>
+      <input type="text" class="form-control" [value]="mobileNumber" id="mobile" readonly>
+    </div> -->
+    <div class="form-group">
+      <label>Auth Token:</label>
+      <input type="text" class="form-control" [value]="socialUser?.authToken" id="authToken" readonly>
+    </div>
+    <div class="form-group">
+      <label>ID:</label>
+      <input type="text" class="form-control" [value]="socialUser?.id" id="id" readonly>
+    </div>
+    <div class="form-group">
+      <label>Provider:</label>
+      <input type="text" class="form-control" [value]="socialUser?.provider" id="provider" readonly>
+    </div>
+    <div class="form-group">
+      <label>Profile Picture:</label>
+      <br>
+      <img [src]="socialUser?.photoUrl" alt="Profile Picture" width="100" height="100">
+    </div>
+    <button type="button" (click)="logOut()" class="btn btn-primary">Log Out</button>
+  </div>
+
+
+  <!-- <h2 class="text-center mb-4">Login with Facebook in Angular</h2> -->
+  <!-- <div *ngIf="!isLoggedin">
+    <button type="button" (click)="loginWithFacebook()" class="btn btn-primary btn-block">Signin with Facebook</button>
+  </div>
+  <div *ngIf="isLoggedin === true">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" [value]="socialUser.firstName" id="firstname" readonly>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" [value]="socialUser.lastName" id="lastname" readonly>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" [value]="socialUser.email" id="email" readonly>
+    </div>
+    <button type="button" (click)="logOut()" class="btn btn-primary">Sign Out</button>
+  </div> -->
+  
+</div>
+
