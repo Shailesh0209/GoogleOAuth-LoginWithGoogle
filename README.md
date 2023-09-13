@@ -9,3 +9,8 @@ How to Run
    - For my case Authorised redirect URIs (kind info: your local url exactly match with that u have written in the api & services of google cloud
    - http://127.0.0.1:5666/auth
 4. python app.py or python3 app.py
+
+
+  SignIn with Google
+[Official Documetation - Google Developers](https://developers.google.com/identity/gsi/web/guides/overview)
+[Firebase - official Documentation](https://firebase.google.com/docs/auth)
